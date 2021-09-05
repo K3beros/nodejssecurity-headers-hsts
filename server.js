@@ -14,6 +14,7 @@ httpApp.set("view engine", "handlebars");
 httpApp.use(
   helmet.hsts({
     maxAge: 86400,
+    includeSubdomains: true,
   })
 );
 
